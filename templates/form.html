@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Housing Rental Agreement Form</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Housing Rental Agreement Form</h1>
+
+        <form action="/" method="post" enctype="multipart/form-data">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Party 1 Details</h2>
+                    <div class="form-group">
+                        <label>Name:</label>
+                        <input type="text" class="form-control" name="party1_name" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Address:</label>
+                        <input type="text" class="form-control" name="party1_address" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Proof Document:</label>
+                        <input type="file" class="form-control-file" name="party1_proof_document" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Signature:</label>
+                        <input type="text" class="form-control" name="party1_signature" required>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h2>Party 2 Details</h2>
+                    <div class="form-group">
+                        <label>Name:</label>
+                        <input type="text" class="form-control" name="party2_name" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Address:</label>
+                        <input type="text" class="form-control" name="party2_address" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Proof Document:</label>
+                        <input type="file" class="form-control-file" name="party2_proof_document" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Signature:</label>
+                        <input type="text" class="form-control" name="party2_signature" required>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary">Generate Agreement</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
